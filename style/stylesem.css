@@ -230,12 +230,21 @@ img{
   .groupname{
     text-align: center;
     padding: 20px;
-     font-size: 30px;
+     font-size: 15px;
      font-weight: bolder;
      background-color: black;
      color: white;
      border-radius:0px 0px 12px 12px;
      /* margin-top: 155px; */
+  }
+
+  .groupname h1{
+    font-size: 18px;
+    text-decoration: underline;
+     
+  }
+  .groupname h2{
+    font-size: 15px;
   }
 
   .nameee{

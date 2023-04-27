@@ -190,3 +190,11 @@ button  .custom-btn btn-16{
 
 }
 
+.clg_img img {
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+

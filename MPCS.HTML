@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style/stylesemmm.css">
   <link rel="stylesheet" href="style/navstyle.css">
   <link rel="stylesheet" href="js/jsgoogle.js">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
   <div class="content">
@@ -22,40 +24,44 @@
     <p class="subtitle"> DEVELOPED BY<br> @ARAVIND_MAHARAJ6 </p>
   </div>
   
+
+  <nav>
+    <ul>
+       <li class="logo"><a href="INDEX.HTML">HOME</a></li>
+       <li class="items"><a href="MSTCS.HTML">MSTCS</a></li>
+       <li class="items"><a href="MSTDS.HTML">MSTDS</a></li>
+       <li class="items"><a href="BCOM_CA.HTML">B.COM(CA)</a></li>
+       <li class="items"><a href="BCOM_GEN.HTML">B.COM(GEN)</a></li>
+       <li class="items"><a href="BBA.HTML">BBA</a></li>
+       <li class="items"><a href="BTBC.HTML">BTBC</a></li>
+       <li class="items"><a href="BZC.HTML">BZC</a></li>
+       
+       <li class="items"><a href="about.html">ABOUT</a></li>
+
+       <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+ </nav>
+
+ <script>
+    $(document).ready(function(){
+      $('.btn').click(function(){
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
+      });
+    });
+ </script>
+
  
-  <header class="header">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="logo">
-          <a href="INDEX.HTML">HOME</a>
-        </div>
-        <button type="button" class="nav-toggler">
-          <span></span>
-        </button>
-        <nav class="nav">
-          <ul>
-            <li><a href="MSTCS.HTML">MSTCS</a></li>
-            <li><a href="MSTDS.HTML">MSTDS</a></li>
-            <li><a href="BCOM_CA.HTML">B.COM(CA)</a></li>
-            <li> <a href="BCOM_GEN.HTML">B.COM(GEN)</a></li>
-            <li><a href="BBA.HTML">BBA</a></li>
-            <li><a href="BTBC.HTML">BTBC</a></li>
-            <li><a href="BZC.HTML">BZC</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    
-  </header>
 
 
- <!--<div class="idbutton">
+
+ <div class="idbutton">
   <ul>
-    <li><a href="#sem__1">SM1</a></li>
+    <!-- <li><a href="#sem__1">SM1</a></li>
     <li><a href="#sem__2">SM2</a></li>
-    <li><a href="#sem__3">SM3</a></li>
+    <li><a href="#sem__3">SM3</a></li> -->
     <li><a href="#sem__4">SM4</a></li>
-   <li><a href="#sem__5">SM5</a></li>
+   <!-- <li><a href="#sem__5">SM5</a></li> -->
     <li><a href="#sem__6">SM6</a></li>
   </ul>
 </div>
@@ -68,7 +74,7 @@
    
   </div>
   
-   <div id="sem__1"></div>
+   <!--<div id="sem__1"></div>
   <div class="sem" >
     <h1><span class="sm1" >SEMISTER-1</span></h1>
   </div>
@@ -677,11 +683,13 @@
         <a href="https://www.youtube.com/channel/UCQzlon6W5VkexC_uRXCGa6A"><i class="fa fa-instagram"></i></a>
         <a href="https://www.youtube.com/channel/UCQzlon6W5VkexC_uRXCGa6A"><i class="fa fa-youtube"></i></a>
         <a href="https://www.youtube.com/channel/UCQzlon6W5VkexC_uRXCGa6A"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/channel/UCQzlon6W5VkexC_uRXCGa6A"><i class="fa fa-telegram"></i></a>
+
       </div>
 
       <div class="row">
         <ul>
-          <li><a href="#">ABOUT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
           <li><a href="#">Contact us</a></li>
           <li><a href="#">Our Services</a></li>
           <li><a href="#">Privacy Policy</a></li>

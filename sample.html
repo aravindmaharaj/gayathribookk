@@ -1,14 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created By CodingNepal -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+   <meta charset="utf-8">
+   <title>Responsive Navigation Bar</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+   </style>
 </head>
 <body>
-    <p style="margin-top: 0px; margin-bottom: 10px;"> (sem-4)</p>
-    <!-- <p style="margin: 0px ; font-size: 12px;">AUTHORISED BY - <br>RAJENDHER RAJUKUMAR</p> -->
-    <iframe src="/preview#toolbar0" width="100%" height="630px" ></iframe>
+   <nav>
+      <ul>
+         <li class="logo">CodingNepal</li>
+         <li class="items"><a href="#">Home</a></li>
+         <li class="items"><a href="#">About</a></li>
+         <li class="items"><a href="#">Blogs</a></li>
+         <li class="items"><a href="#">Contact</a></li>
+         <li class="items"><a href="#">Feedback</a></li>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum quasi ipsam culpa architecto soluta error reiciendis dolorum? Vero commodi architecto qui necessitatibus iusto fuga nobis inventore dolor. Eaque aperiam nostrum, incidunt amet perferendis ex nihil possimus assumenda dolore, optio cumque molestiae. Autem ex aliquam aliquid. Vitae quisquam eveniet ipsam perspiciatis hic! Voluptas labore ea molestias in asperiores a aspernatur corrupti error mollitia incidunt harum, quibusdam ab. Voluptate rerum voluptatum quidem sapiente incidunt impedit dolor similique id dolorem veniam doloremque voluptatem eius, inventore, praesentium deleniti quo? Soluta perferendis necessitatibus animi maxime tenetur iusto incidunt deleniti. Quaerat quisquam facilis dolorem perferendis nemo esse vel soluta non, sint libero accusamus dolores nisi numquam. Omnis non nesciunt eveniet tenetur. Sit nostrum corrupti accusantium ad adipisci nihil, dolorum voluptatibus voluptas perspiciatis ullam optio dolorem nobis illum nulla deserunt aut? Fugit facere repellat beatae harum debitis libero voluptas reiciendis veniam, aut itaque cumque. Earum, distinctio quaerat repudiandae, adipisci est velit quos odio culpa animi nostrum natus? Consequuntur corrupti animi perspiciatis nihil aspernatur natus deserunt, blanditiis non, in delectus ab iusto quidem, illum magni minus illo commodi exercitationem quia pariatur dolores ratione numquam? Voluptates pariatur illum esse aperiam. Facilis aperiam consequatur laudantium quod aliquid corrupti odit consectetur et veniam voluptatem doloribus, praesentium molestiae non nemo possimus deserunt harum aspernatur maiores excepturi? Veniam nam placeat dicta architecto dolore nesciunt dignissimos quas, blanditiis, tempore ad, enim illo repudiandae voluptatem repellendus numquam et accusamus? Consectetur modi, esse dolorem eos amet commodi delectus possimus debitis, corrupti nihil tempore reiciendis? Quisquam eligendi repudiandae unde modi, dolor fugiat sint autem suscipit cupiditate ea quasi provident qui pariatur perspiciatis soluta dolorem hic reprehenderit! Reiciendis doloremque perferendis consectetur aut. Voluptatibus voluptate reprehenderit veritatis quibusdam repellat vel error suscipit quisquam, quas porro accusamus enim facilis harum possimus debitis incidunt cum. Sunt corporis ad porro, consequuntur sequi officiis cumque deserunt adipisci ea suscipit saepe necessitatibus nihil illo odit vel beatae laboriosam explicabo voluptate. Excepturi sunt aliquam, eaque maiores doloremque reiciendis et consequuntur ipsam omnis animi est placeat exercitationem error nisi nemo laborum quos natus soluta veniam expedita facere. Atque autem ratione laboriosam pariatur molestiae doloribus soluta aut. Adipisci at quidem iure iusto doloribus dolorem quo placeat. Animi earum beatae maiores non odit voluptate sunt debitis doloremque accusamus alias. Ullam id saepe velit modi illum vel non quasi? Harum, sit. Laboriosam hic non eaque maiores vel delectus dolore, at unde, architecto voluptate odio magnam officiis praesentium. A quos eveniet, laborum quibusdam sed totam adipisci maiores rerum aliquid nihil ab ipsam eum voluptatum voluptatibus natus placeat praesentium commodi consequatur exercitationem. Dolor magni nulla ea est quam velit inventore. Blanditiis rerum facere minima quo consequuntur atque dolorem animi. Quisquam, voluptas qui! Omnis magnam iusto aliquid cumque atque sit at soluta, minus pariatur accusamus sunt autem nulla deserunt temporibus natus animi itaque esse quasi eius debitis culpa necessitatibus? Temporibus saepe voluptatem aliquam reprehenderit, totam cumque excepturi iste ipsam? Eaque, sint. Fugit animi ratione quidem eveniet aliquid tenetur officiis, ad laborum aliquam commodi porro, vero quisquam voluptates amet, possimus iure consequuntur.</p>
+   <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
 </body>
 </html>

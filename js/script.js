@@ -32,3 +32,6 @@ function navToggle() {
    document.body.scrollTop = 0;
    document.documentElement.scrollTop = 0;
  }
+
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9493323507160233"
+     crossorigin="anonymous"></script>

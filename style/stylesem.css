@@ -68,6 +68,9 @@ body {
 
 
 @media screen and (max-width:600px) {
+  .work{
+    background-color: honeydew;
+  }
   .work_1{
     background-color: rgb(172, 135, 135);
     

@@ -41,6 +41,30 @@ body {
 
 
 }
+/* .work_1 {
+  background-color: #4cbfa6 ;
+ 
+ }
+ .work_2 {
+  background-color: #f6ebf4;
+ 
+ }
+ .work_3 {
+  background-color: #482673;
+ 
+ }
+ .work_4 {
+  background-color: #ed0b70;
+ 
+ }
+ .work_5 {
+ background-color:#301008 ;
+
+}
+.work_6 {
+  background-color: #4cbfa6 ;
+ 
+ } */
 
 
 @media screen and (max-width:600px) {
@@ -253,5 +277,15 @@ img{
     font-size: 17px;
     text-decoration: underline;
   }
+
+
+   .barder{
+    border: 3px solid rgb(0, 0, 0);
+   }
+
+
+   .nameinfo{
+    background-color: rgb(21, 255, 0); text-align: center;
+   }
   
   

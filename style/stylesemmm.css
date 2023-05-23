@@ -306,8 +306,7 @@ position: -webkit-sticky;
 position: sticky;
 top: 0;
 padding: 5px;
-
-
+z-index: 1;
 
 
 }
@@ -332,6 +331,29 @@ text-decoration: none;
 
 
 }
+
+.social{
+  
+  position: sticky;
+  top: 200px;
+  padding: 5px;
+ float: right;   
+ background-color: #2f3240;
+ font-size: 40PX;
+ z-index: 1;
+ 
+
+ 
+}
+
+.social i{
+  color: #009dff;
+}
+.sociall i{
+  color: #00ff2f;
+}
+
+
 html{
 scroll-behavior: smooth;
 }

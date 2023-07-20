@@ -1,17 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2nd CHEMISTRY</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd CHEMISTRY</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    button {
+      position: relative;
+      height: 30px;
+      width: 110px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      outline: none;
+      cursor: pointer;
+      background: #0d0d0d;
+      overflow: hidden;
+      transition: 0.6s;
+    }
+
+    button:first-child {
+      color: #206592;
+      border-color: #206592;
+    }
+
+    button:last-child {
+      color: yellow;
+      border-color: #04ff00;
+    }
+
+    button:before,
+    button:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      filter: blur(30px);
+      opacity: 0.4;
+      transition: 0.6s;
+    }
+
+    button:before {
+      width: 60px;
+      background: rgba(255, 255, 255, 0.6);
+      transform: translateX(-130px) skewX(-45deg);
+    }
+
+    button:after {
+      width: 30px;
+      background: rgba(255, 255, 255, 0.6);
+      transform: translateX(-130px) skewX(-45deg);
+    }
+
+    button:hover:before,
+    button:hover:after {
+      opacity: 0.6;
+      transform: translateX(320px) skewX(-45deg);
+    }
+
+    button:hover {
+      color: #000000;
+    }
+
+    button:hover:first-child {
+      background: #206592;
+    }
+
+    button:hover:last-child {
+      background: #ce5c0c;
+    }
+  </style>
 </head>
+
 <body>
-    <p style="margin-top: 0px; margin-bottom: 10px;">CHEMISTRY</p>
-    <p style="margin: 0px ; font-size: 12px;">AUTHORISED BY - MR.MAHESH    <br>
-    for more quality notes  <br> <button>low quality</button> <button>mediam quality</button> <a href="https://drive.google.com/file/d/1DCKExLqu_PmulPH75lMOqOKufieezj-_/view?usp=sharing"><button>high quality</button></a>
-    </p>
-    <iframe src="https://drive.google.com/file/d/1CxEAdNH4buAwatxtXQAe1dDFZxGW83FM/preview#toolbar0" width="100%" height="630px" ></iframe>
+  <p style="margin-top: 0px; margin-bottom: 10px;">CHEMISTRY</p>
+  <p style="margin: 0px ; font-size: 12px;">AUTHORISED BY - MR.MAHESH</p>
+  <p style="margin: 2px;border: 3px solid rgb(255, 0, 0); "> Improve PDF loading speed by clicking on the bellow buttons   </p>
+  <div> <a href="https://drive.google.com/file/d/1DEit80esq2swX98Wmt_KBzO3Gx9QYyPb/view?usp=sharing"><button>Low Quality
+        pdf</button></a> 
+        <a href="https://drive.google.com/file/d/1CxEAdNH4buAwatxtXQAe1dDFZxGW83FM/view?usp=drive_link"> <button>Mediam
+        Quality pdf</button> </a>
+        <a   href="https://drive.google.com/file/d/1DCKExLqu_PmulPH75lMOqOKufieezj-_/view?usp=sharing"><button>High Quality
+        pdf</button></a>
+  </div>
+  <iframe src="https://drive.google.com/file/d/1CxEAdNH4buAwatxtXQAe1dDFZxGW83FM/preview#toolbar0" width="100%"
+    height="630px"></iframe>
 </body>
+
 </html>

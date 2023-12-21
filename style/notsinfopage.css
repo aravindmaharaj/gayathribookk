@@ -270,43 +270,7 @@ img {
 }
 
 
-.idbutton {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding: 5px;
-  z-index: 1;
-  align-items: center;
-  
-  
-  }
-  .idbutton ul{
-    padding-left: 0px;
-    text-align: center;
-  }
-  
-  .idbutton ul li{
-   
-   border: 1px solid black;
-    background-color: #008cba; 
-   font-size:16PX;
-   color: #ffffff;
-   padding: 5PX 10PX;
-   display: inline-block;
-   border-radius: 20px;
-   z-index: 3;
-   
-   
-  
-  
-  }
-  .idbutton ul li a{
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  align-items: center;
-  
-  }
+
   
   .social{
   
